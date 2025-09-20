@@ -47,6 +47,28 @@
       ],
       "id": "0f315c5d-b389-474e-aaae-360f43bcd24c",
       "name": "HTML"
+    },
+    {
+      "parameters": {
+        "chatId": "",
+        "text": "This is a n8n node message!",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        624,
+        0
+      ],
+      "id": "48f32218-7af9-4843-9147-5c6ac06dc43d",
+      "name": "Send a text message",
+      "webhookId": "8b280902-a2bf-4c38-aed8-fad00ec5fa9f",
+      "credentials": {
+        "telegramApi": {
+          "id": "zvlfEtnyaqaYudh9",
+          "name": "Telegram account"
+        }
+      }
     }
   ],
   "pinData": {},
@@ -72,14 +94,26 @@
           }
         ]
       ]
+    },
+    "HTML": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "active": false,
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "81e0951e-2c4c-42cf-96da-2f6fca515108",
+  "versionId": "383553a3-e7f8-463e-9708-6d6c13133e99",
   "meta": {
+    "templateCredsSetupCompleted": true,
     "instanceId": "68b10562723c01804dfa4bbc659790b1708e41dc9e121c4ff499b91cb31354da"
   },
   "id": "sYUYAy8catUpQQKy",
